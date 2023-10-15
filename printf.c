@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _printf - mimic the standard lib printf
+ * @format: string
+ * Return: int, the number of printed chars
+ */
+
 int _printf (const char *format, ...)
 {
   int count = 0;
