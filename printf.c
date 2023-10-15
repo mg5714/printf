@@ -15,28 +15,28 @@ int _printf (const char *format, ...)
 	  switch (*format)
 	    {
 	    case 'c':
-	      count += putchar (va_arg (args, int));
+	      count += _putchar (va_arg (args, int));
 	      break;
 	    case 's':
 	      str = va_arg (args, char *);
 	      while (*str)
 		{
-		  putchar (*str);
+		  _putchar (*str);
 		  str++;
 		  count++;
 		}
 	      break;
 	    case '%':
-	      count += putchar ('%');
+	      count += _putchar ('%');
 	      break;
 	    default:
-	      count += putchar ('%');
-	      count += putchar (*format);
+	      count += _putchar ('%');
+	      count += _putchar (*format);
 	    }
 	}
       else
 	{
-	  count += putchar (*format);
+	  count += _putchar (*format);
 	}
       format++;
     }
