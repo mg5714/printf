@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 /**
  * _printf: Prints formatted output to stdout.
  *@format: is a character string.
@@ -6,13 +7,61 @@
 */
 int
 _printf (const char *format, ...)
+=======
+
+/**
+ * _printf - mimic the standard lib printf
+ * @format: string
+ * Return: int, the number of printed chars
+ */
+
+int _printf (const char *format, ...)
+>>>>>>> 2379fdf99be8b212f78401b0bbaf050a0f4a9fd5
 {
 va_list args;
 va_start (args, format);
 
+<<<<<<< HEAD
 char buffer[BUFF_SIZE];
 int buffer_index = 0;
 int char_count = 0;
+=======
+  va_start (args, format);
+  while (*format != '\0')
+    {
+      if (*format == '%')
+	{
+	  format++;
+	  switch (*format)
+	    {
+	    case 'c':
+	      count += _putchar (va_arg (args, int));
+	      break;
+	    case 's':
+	      str = va_arg (args, char *);
+	      while (*str)
+		{
+		  _putchar (*str);
+		  str++;
+		  count++;
+		}
+	      break;
+	    case '%':
+	      count += _putchar ('%');
+	      break;
+	    default:
+	      count += _putchar ('%');
+	      count += _putchar (*format);
+	      break;
+	    }
+	}
+      else
+	{
+	  count += _putchar (*format);
+	}
+      format++;
+    }
+>>>>>>> 2379fdf99be8b212f78401b0bbaf050a0f4a9fd5
 
 while (*format)
 {
