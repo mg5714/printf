@@ -1,21 +1,11 @@
 #include "main.h"
-/*test main printf.c*/
-int main()
-{
-    int count;
-    count = _printf("Testing %% formatting\n");
-    printf("Total characters printed: %d\n", count);
-    
-    count = _printf("Testing %c formatting\n", 'a');
-    printf("Total characters printed: %d\n", count);
-    
-    char  *str = "Hello, World!";
-    count = _printf("Testing %s formatting\n", str);
-    printf("Total characters printed: %d\n", count);
-    
+/**testing for printf*/
+int main() {
+    int printed_chars = _printf("Hello, %s! Today is %c.\n", "John", 'M');
+    printf("Number of characters printed: %d\n", printed_chars);
+
     return 0;
 }
-
 
 
 /*test main bin.c*/
@@ -35,5 +25,24 @@ int main()
     int num = 986;
     int *ptr = &num;
     printPointer(ptr);
+    return (0);
+}
+
+
+/**testing for long_short*/
+int main() {
+    int value = 10;
+
+    printLong(value);
+    printShort(value);
+    printUnsignedLong(value);
+    printUnsignedShort(value);
+    printOctalLong(value);
+    printHexLong(value);
+    printHexLongUppercase(value);
+    printOctalShort(value);
+    printHexShort(value);
+    printHexShortUppercase(value);
+
     return (0);
 }
