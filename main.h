@@ -31,10 +31,12 @@ int _printf(const char *format, ...);
 
 void write_buffer(char *buffer, int *buffer_index, int *char_count);
 void process_character(char *buffer, int *buffer_index, int *char_count, char character);
-void process_string(char *buffer, int *buffer_index, int *char_count, char *str);
-void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
-
-int _printf(const char *format, ...);
+/*
+ * void process_string(char *buffer, int *buffer_index, int *char_count, char *str);
+ * void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
+ *
+ * int _printf(const char *format, ...);
+ */
 
 int rot13(va_list lst);
 int reversed(va_list arg1);
