@@ -11,6 +11,8 @@
 
 int _putchar(char c);
 void convertToBinary(unsigned int num);
+void convertToOctal(unsigned int num);
+void convertToHex(unsigned int num, char case);
 void printPointer(void *ptr);
 
 void printLong(int value);
@@ -33,4 +35,9 @@ void process_string(char *buffer, int *buffer_index, int *char_count, char *str)
 void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
 
 int _printf(const char *format, ...);
+
+int rot13(va_list lst);
+int reversed(va_list arg1);
+char *rev(char *x);
+
 #endif
