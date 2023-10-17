@@ -14,9 +14,9 @@ void convertToBinary(unsigned int num);
 void convertToOctal(unsigned int num);
 
 /* void convertToHex(unsigned int num, char case); */
-void printPointer(char *buffer, int *buffer_index, int *char_count, void *ptr);
-int _strlen(char *s);
-void print_int(char *buffer, int *buffer_index, int *char_count, va_list args);
+/* void printPointer(char *buffer, int *buffer_index, int *char_count, void *ptr); */
+/* int _strlen(char *s); */
+/* void print_int(char *buffer, int *buffer_index, int *char_count, va_list args); */
 
 
 void printLong(int value);
@@ -35,18 +35,12 @@ int _printf(const char *format, ...);
 
 void write_buffer(char *buffer, int *buffer_index, int *char_count);
 void process_character(char *buffer, int *buffer_index, int *char_count, char character);
-<<<<<<< HEAD
-
-
- void process_string(char *buffer, int *buffer_index, int *char_count, char *str);
-void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
-void handle_flags(char *buffer, int *buffer_index, int *char_count, const char *format);
-=======
->>>>>>> c1434196604151b36de2c8147d60309f4fe740bc
 
 void process_string(char *buffer, int *buffer_index, int *char_count, char *str);
 void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
-int _printf(const char *format, ...);
+void handle_flags(char *buffer, int *buffer_index, int *char_count, const char *format);
+
+
  
 /*
 int rot13(va_list lst);
@@ -55,10 +49,5 @@ char *rev(char *x);
 */
 
 
-
-void process_string(char *buffer, int *buffer_index, int *char_count, char *str);
-void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
-
 int _printf(const char *format, ...);
-
 #endif
