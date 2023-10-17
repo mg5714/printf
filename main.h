@@ -18,6 +18,11 @@ void printPointer(char *buffer, int *buffer_index, int *char_count, void *ptr);
 int _strlen(char *s);
 void print_int(char *buffer, int *buffer_index, int *char_count, va_list args);
 
+/*
+void convertToHex(unsigned int num, char case);
+void printPointer(void *ptr);
+>>>>>>> a68946c7c236c2e08b6b442e00dd6904707d0841
+*/
 
 void printLong(int value);
 void printShort(int value);
@@ -35,30 +40,33 @@ int _printf(const char *format, ...);
 
 void write_buffer(char *buffer, int *buffer_index, int *char_count);
 void process_character(char *buffer, int *buffer_index, int *char_count, char character);
-<<<<<<< HEAD
 
-
+/*
  void process_string(char *buffer, int *buffer_index, int *char_count, char *str);
 void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
-void handle_flags(char *buffer, int *buffer_index, int *char_count, const char *format);
-=======
->>>>>>> c1434196604151b36de2c8147d60309f4fe740bc
-
+void handle_flags(char *buffer, int *buffer_index, int *char_count, const char *format);*/
+/*
 void process_string(char *buffer, int *buffer_index, int *char_count, char *str);
 void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
 int _printf(const char *format, ...);
- 
+ */
+
+
 /*
+void process_string(char *buffer, int *buffer_index, int *char_count, char *str);
+void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
+*/
+
+int _printf(const char *format, ...);
+
+
+void process_string(char *buffer, int *buffer_index, int *char_count, char *str);
+void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
+void handle_flags(char *buffer, int *buffer_index, int *char_count, const char *format);
+
 int rot13(va_list lst);
 int reversed(va_list arg1);
 char *rev(char *x);
-*/
-
-
-
-void process_string(char *buffer, int *buffer_index, int *char_count, char *str);
-void process_format(char *buffer, int *buffer_index, int *char_count, va_list args, char format);
-
-int _printf(const char *format, ...);
+>>>>>>> cb5f99f (test)
 
 #endif
