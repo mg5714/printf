@@ -31,5 +31,5 @@ int rot13(va_list lst)
 			_putchar(str[n]);
 		}
 	}
-	return m;
+	return (m);
 }
