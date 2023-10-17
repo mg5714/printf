@@ -67,6 +67,5 @@ void handle_flags(char *buffer, int *buffer_index, int *char_count, const char *
 int rot13(va_list lst);
 int reversed(va_list arg1);
 char *rev(char *x);
->>>>>>> cb5f99f (test)
 
 #endif
