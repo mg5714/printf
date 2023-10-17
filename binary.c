@@ -9,6 +9,16 @@ void convertToBinary(unsigned int num)
 unsigned int binary[32];
 int j, i = 0;
 
+if (num == NULL)
+{
+	my_putchar(-1);
+}
+if (num < 1)
+{
+	my_putchar(-1);
+}
+else
+
 while (num > 0)
 {
 binary[i] = num % 2;
