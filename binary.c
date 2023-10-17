@@ -21,3 +21,4 @@ for (j = i - 1; j >= 0; j--)
 _putchar(binary[j] + '0');
 }
 }
+
