@@ -32,9 +32,9 @@ void printPointer(void *ptr);
 /* void printHexShortUppercase(unsigned int value); */
 
 
-int my_putchar(char c);
-void convertToBinary(unsigned int num);
-void convertToOctal(unsigned int num);
+/* int my_putchar(char c); */
+/* void convertToBinary(unsigned int num); */
+/* void convertToOctal(unsigned int num); */
 
 
 
