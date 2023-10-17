@@ -9,13 +9,13 @@ int rot13(va_list lst)
 {
 	int n, m;
 	char *str = va_arg(lst, char *);
+	char og[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char new[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	if (str == NULL)
 	{
 		return (-1);
 	}
-	char og[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char new[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (n = 0; str[n] != '\0'; n++)
 	{
@@ -31,5 +31,5 @@ int rot13(va_list lst)
 			_putchar(str[n]);
 		}
 	}
-	return m;
+	return (m);
 }
