@@ -26,12 +26,12 @@ break;
 case '%':
 process_character(buffer, buffer_index, char_count, '%');
 break;
-/* case 'b': */
-/* { */
-/* unsigned int num = va_arg(args, unsigned int); */
-/* convertToBinary(num); */
-/* break; */
-/* } */
+case 'b':
+{
+unsigned int num = va_arg(args, unsigned int);
+convertToBinary(num);
+break;
+}
 /* case 'p': */
 /* { */
 /* printPointer(buffer, buffer_index, char_count, va_arg(args, void *)); */
