@@ -11,13 +11,12 @@ int j, i = 0;
 
 if (num == NULL)
 {
-	my_putchar(-1);
+	return (-1);
 }
 if (num < 1)
 {
-	my_putchar(-1);
+	return (-1);
 }
-else
 
 while (num > 0)
 {
