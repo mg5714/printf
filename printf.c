@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf: Prints formatted output to stdout.
+ * _printf - Prints formatted output to stdout
  * @format: A character string.
  * Return: The number of characters printed.
  */
@@ -18,7 +18,7 @@ while (*format)
 if (*format == '%')
 {
 format++;
-
+handle_flags(buffer, &buffer_index, &char_count, format);
 process_format(buffer, &buffer_index, &char_count, args, *format);
 }
 else

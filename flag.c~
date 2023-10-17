@@ -1,0 +1,43 @@
+#include "main.h"
+/**
+ * handle_flags - Handles the flag characters and pass it to buffer.
+ * @buffer: Pointer to buffer
+ * @buffer_index: Pointer to buffer_index
+ * @char_count: Pointer to the character count
+ * @format: Pointer to specifier
+ */
+/**
+ * convertToBinary - convert integer to binary.
+ * @num: integer number to be converted.
+ * Return: void.
+ */
+void handle_flags(char *buffer, int *buffer_index, int *char_count, const char **format) 
+{
+   
+    char flag = **format;
+    switch (flag) {
+        case '+':
+            
+            break;
+        case '-':
+           
+            break;
+        case '#':
+            
+            break;
+        case '0':
+            break;
+        case ' ':
+            
+            break;
+    }
+
+    (*format)++;
+
+    if (**format == 'l') {
+        (*format)++;
+    } else if (**format == 'h') {
+        
+        (*format)++;
+    }
+}
