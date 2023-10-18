@@ -32,6 +32,12 @@ unsigned int num = va_arg(args, unsigned int);
 convertToBinary(buffer, buffer_index, char_count, num);
 break;
 }
+case 'o':
+{
+unsigned int num = va_arg(args, unsigned int);
+convertToOctal(buffer, buffer_index, char_count, num);
+break;
+}
 /* case 'p': */
 /* { */
 /* printPointer(buffer, buffer_index, char_count, va_arg(args, void *)); */
