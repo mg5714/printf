@@ -20,7 +20,10 @@ break;
 }
 case 's':
 {
-process_string(buffer, buffer_index, char_count, va_arg(args, char *));
+char *str = va_arg(args, char *);
+if (str == NULL)
+str = "(null)";
+process_string(buffer, buffer_index, char_count, str);
 break;
 }
 case '%':
@@ -32,11 +35,6 @@ unsigned int num = va_arg(args, unsigned int);
 convertToBinary(buffer, buffer_index, char_count, num);
 break;
 }
-/* case 'p': */
-/* { */
-/* printPointer(buffer, buffer_index, char_count, va_arg(args, void *)); */
-/* break; */
-/* } */
 case 'i':
 case 'd':
 {

@@ -7,6 +7,8 @@
  */
 int _printf(const char *format, ...)
 {
+if (format == NULL)
+return (-1);
 char buffer[BUFF_SIZE];
 int buffer_index = 0;
 int char_count = 0;
@@ -18,6 +20,8 @@ while (*format)
 if (*format == '%')
 {
 format++;
+if (*format == '\0')
+break;
 handle_flags(buffer, &buffer_index, &char_count, format);
 process_format(buffer, &buffer_index, &char_count, args, *format);
 }
