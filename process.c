@@ -37,12 +37,12 @@ break;
 /* printPointer(buffer, buffer_index, char_count, va_arg(args, void *)); */
 /* break; */
 /* } */
-/* case 'i': */
-/* case 'd': */
-/* { */
-/* print_int(buffer, buffer_index, char_count, args); */
-/* break; */
-/* } */
+case 'i':
+case 'd':
+{
+print_int(buffer, buffer_index, char_count, va_arg(args, int));
+break;
+}
 default:
 process_character(buffer, buffer_index, char_count, '%');
 process_character(buffer, buffer_index, char_count, format);
