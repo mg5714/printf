@@ -15,17 +15,17 @@ char new;
 
 char *binary = malloc(sizeof(char) * size);
 
-if (num == NULL || num < 0)
+if (num == 0)
 {
 	return (-1);
 }
 
 while (num > 0)
 {
-binary[i++] = num % 2 + '0' ;
+binary[i++] = num % 2 + '0';
 num = num / 2;
 }
-for (int j = 0; j < i / 2; j++)
+for (j = 0; j < i / 2; j++)
 {
 <<<<<<< HEAD
 my_putchar(binary[j] + '0');
