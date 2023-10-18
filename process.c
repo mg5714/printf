@@ -43,6 +43,7 @@ break;
 }
 default:
 process_character(buffer, buffer_index, char_count, '%');
+if (format != '\0')
 process_character(buffer, buffer_index, char_count, format);
 break;
 }
