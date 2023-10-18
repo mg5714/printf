@@ -39,10 +39,7 @@ break;
 case 'i':
 case 'd':
 {
-int *format = va_arg(args, int);
-if (format == NULL)
-format = "-2147483648";
-print_int(buffer, buffer_index, char_count, format);
+print_int(buffer, buffer_index, char_count, va_arg(args, int));
 break;
 }
 default:
