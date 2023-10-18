@@ -14,7 +14,7 @@ int i, x = 0;
 
 if (value == INT_MIN)
 {
-process_string(buffer, buffer_index, char_count, "-2147483648");
+process_string(buffer, buffer_index, char_count, "–2147483648");
 return;
 }
 if (value < 0)
