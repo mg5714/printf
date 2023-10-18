@@ -38,18 +38,6 @@ unsigned int num = va_arg(args, unsigned int);
 convertToOctal(buffer, buffer_index, char_count, num);
 break;
 }
-case 'x':
-{
-unsigned int num = va_arg(args, unsigned int);
-convertToHex(buffer, buffer_index, char_count, num);
-break;
-}
-case 'X':
-{
-unsigned int num = va_arg(args, unsigned int);
-convertToHex(buffer, buffer_index, char_count, num);
-break;
-}
 /* case 'p': */
 /* { */
 /* printPointer(buffer, buffer_index, char_count, va_arg(args, void *)); */
