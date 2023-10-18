@@ -15,7 +15,7 @@ void convertToOctal(unsigned int num)
   }
   for (int j = i - 1; j >= 0; j--)
   {
-    printf("%d", octal[j]);
+    my_putchar(octal[j] + '0');
   }
 }
 
