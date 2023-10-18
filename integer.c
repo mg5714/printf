@@ -11,6 +11,15 @@ void print_int(char *buffer, int *buffer_index, int *char_count, int value)
 
 char arr[32];
 int i, x = 0;
+
+if (value == INT_MIN)
+{
+process_character(buffer, buffer_index, char_count, '-');
+value = -(value + 1);
+arr[x++] = (value % 10) + '1';
+value /= 10;
+}
+
 if (value < 0)
 {
 process_character(buffer, buffer_index, char_count, '-');
