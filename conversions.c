@@ -25,7 +25,7 @@ void convertToOctal(unsigned int num)
  * @num: number to be converted
  * Return: number of printed chars
  */
-void convertToHex(unsigned int num, char case)
+/*void convertToHex(unsigned int num, char case)
 {
   char hex_table[32] = "0123456789ABCDEF";
   char hex[32];
@@ -39,7 +39,7 @@ void convertToHex(unsigned int num, char case)
     }
     else
     {
-      hex[i] = to_lower(hex_table[remainder]);
+      hex[i] = tolower(hex_table[remainder]);
     }
     num /= 16;
     i++;
@@ -48,4 +48,4 @@ void convertToHex(unsigned int num, char case)
   {
     printf("%c", hex[j]);
   }
-}
+}*/
