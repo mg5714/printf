@@ -29,7 +29,7 @@ binary[j] = binary[i - j - 1];
 binary[i - j - 1] = new;
 }
 
-for (j = i - 1; j >= 0; j--)
+for (j = i - 1; j >= 0; j++)
 {
 my_putchar(binary[j]);
 }
