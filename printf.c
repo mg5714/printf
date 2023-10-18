@@ -15,14 +15,11 @@ va_start(args, format);
 
 while (*format)
 {
-if (*format == NULL)
-{
-return (-1);
-}
-
 if (*format == '%')
 {
 format++;
+if (*format == '\0')
+break;
 handle_flags(buffer, &buffer_index, &char_count, format);
 process_format(buffer, &buffer_index, &char_count, args, *format);
 }
