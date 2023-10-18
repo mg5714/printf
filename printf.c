@@ -12,14 +12,13 @@ int buffer_index = 0;
 int char_count = 0;
 va_list args;
 va_start(args, format);
-
+if (format == NULL)
+return -1;
 while (*format)
 {
 if (*format == '%')
 {
 format++;
-if (*format == '\0')
-break;
 handle_flags(buffer, &buffer_index, &char_count, format);
 process_format(buffer, &buffer_index, &char_count, args, *format);
 }
