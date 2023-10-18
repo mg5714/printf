@@ -3,10 +3,10 @@
 
 #define BUFF_SIZE 1024
 
-#include <stdio.h>
+/* #include <stdio.h> */
 #include <unistd.h>
 #include <stdarg.h>
-#include <stdlib.h>
+/* #include <stdlib.h> */
 #include <unistd.h>
 
 
