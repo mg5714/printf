@@ -20,7 +20,11 @@ value = -value;
 
 if (value == INT_MIN)
 {
-process_string(buffer, buffer_index, char_count, "–2147483648");
+process_character(buffer, buffer_index, char_count, "8");
+for (i = 1; i < 10; i++)
+{
+process_character(buffer, buffer_index, char_count, '4');
+}
 return;
 }
 
