@@ -32,7 +32,7 @@ void printPointer(void *ptr);*/
 
 
 int my_putchar(char c);
-void convertToOctal(char *buffer, int *buffer_index, int *char_count, unsigned int num); 
+/*void convertToOctal(char *buffer, int *buffer_index, int *char_count, unsigned int num); */
 void convertToBinary(char *buffer, int *buffer_index, int *char_count, unsigned int num);
 void print_int(char *buffer, int *buffer_index, int *char_count, int value);
 

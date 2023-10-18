@@ -14,7 +14,7 @@ void convertToBinary(char *buffer, int *buffer_index, int *char_count, unsigned 
   while (num > 0)
   {
     octal[i] = num % 8;
-    num /= 8;
+    num / 8;
     i++;
   }
   for (j = i - 1; j >= 0; j--)
