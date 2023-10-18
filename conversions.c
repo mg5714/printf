@@ -39,7 +39,7 @@ void convertToHex(unsigned int num, char case)
     }
     else
     {
-      hex[i] = tolower(hex_table[remainder]);
+      hex[i] = to_lower(hex_table[remainder]);
     }
     num /= 16;
     i++;
