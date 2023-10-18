@@ -15,5 +15,9 @@ while (*format == '+' || *format == ' ' ||
 process_character(buffer, buffer_index, char_count, *format);
 format++;
 }
+if (*format == 'l' || *format == 'h')
+{
+process_character(buffer, buffer_index, char_count, *format);
+format++;
 }
 }
