@@ -15,7 +15,7 @@ void convertToOctal(unsigned int num)
   }
   for (int j = i - 1; j >= 0; j--)
   {
-    my_putchar("%d", octal[j]);
+    printf("%d", octal[j]);
   }
 }
 
@@ -39,13 +39,13 @@ void convertToHex(unsigned int num, char case)
     }
     else
     {
-      hex[i] = tolower(hex_table[remainder]);
+      hex[i] = to_lower(hex_table[remainder]);
     }
     num /= 16;
     i++;
   }
   for (int j = i - 1; j >= 0; j--)
   {
-    my_putchar("%c", hex[j]);
+    printf("%c", hex[j]);
   }
 }
