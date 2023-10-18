@@ -3,17 +3,17 @@
 
 #define BUFF_SIZE 1024
 
-/* #include <stdio.h> */
+#include <stdio.h>
 #include <unistd.h>
 #include <stdarg.h>
-/* #include <stdlib.h> */
+#include <stdlib.h>
 #include <unistd.h>
 
 
 /* void convertToHex(unsigned int num, char case); */
 /* void printPointer(char *buffer, int *buffer_index, int *char_count, void *ptr); */
 /* int _strlen(char *s); */
-/* void print_int(char *buffer, int *buffer_index, int *char_count, va_list args); */
+/* */
 
 /*
 void convertToHex(unsigned int num, char case);

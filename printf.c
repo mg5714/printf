@@ -18,7 +18,7 @@ while (*format)
 if (*format == '%')
 {
 format++;
-/* handle_flags(buffer, &buffer_index, &char_count, format); */
+handle_flags(buffer, &buffer_index, &char_count, format);
 process_format(buffer, &buffer_index, &char_count, args, *format);
 }
 else
