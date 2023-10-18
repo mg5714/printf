@@ -33,9 +33,9 @@ void printPointer(void *ptr);
 
 
 int my_putchar(char c);
-void convertToBinary(unsigned int num);
+/* void convertToBinary(unsigned int num); */
 /* void convertToOctal(unsigned int num); */
-
+void convertToBinary(char *buffer, int *buffer_index, int *char_count, unsigned int num);
 
 
 int printstr(va_list arg_lst);
