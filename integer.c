@@ -24,7 +24,7 @@ process_character(buffer, buffer_index, char_count, '0');
 return;
 }
 
-while (value > 0 && x < sizeof(arr) / sizeof(arr[0]))
+while (value > 0)
 {
 arr[x++] = (value % 10) + '0';
 value = value / 10;
