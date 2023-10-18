@@ -12,15 +12,16 @@ void print_int(char *buffer, int *buffer_index, int *char_count, int value)
 char arr[32];
 int i, x = 0;
 
-if (value == INT_MIN)
-{
-process_string(buffer, buffer_index, char_count, "–2147483648");
-return;
-}
 if (value < 0)
 {
 process_character(buffer, buffer_index, char_count, '-');
 value = -value;
+}
+
+if (value == INT_MIN)
+{
+process_string(buffer, buffer_index, char_count, "–2147483648");
+return;
 }
 
 if (value == 0)
