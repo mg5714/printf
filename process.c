@@ -42,8 +42,8 @@ print_int(buffer, buffer_index, char_count, va_arg(args, int));
 break;
 }
 default:
-process_character(buffer, buffer_index, char_count, '%');
 if (format != '\0')
+process_character(buffer, buffer_index, char_count, '%');
 process_character(buffer, buffer_index, char_count, format);
 break;
 }
