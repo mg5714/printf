@@ -7,8 +7,10 @@
  */
 int _printf(const char *format, ...)
 {
-if (format == NULL)
+if (*format == NULL)
+{
 return (-1);
+}
 char buffer[BUFF_SIZE];
 int buffer_index = 0;
 int char_count = 0;
