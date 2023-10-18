@@ -23,15 +23,7 @@ if (value == 0)
 process_character(buffer, buffer_index, char_count, '0');
 return;
 }
-if (value == INT_MIN)
-{
-process_character(buffer, buffer_index, char_count, "8");
-for (i = 1; i < 10; i++)
-{
-process_character(buffer, buffer_index, char_count, '4');
-}
-return;
-}
+
 while (value > 0 && x < sizeof(arr) / sizeof(arr[0]))
 {
 arr[x++] = (value % 10) + '0';
