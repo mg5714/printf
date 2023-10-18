@@ -27,6 +27,7 @@ process_string(buffer, buffer_index, char_count, str);
 break;
 }
 case '%':
+if (format != '\0')
 process_character(buffer, buffer_index, char_count, '%');
 break;
 case 'b':
@@ -42,7 +43,6 @@ print_int(buffer, buffer_index, char_count, va_arg(args, int));
 break;
 }
 default:
-if (format != '\0')
 process_character(buffer, buffer_index, char_count, '%');
 process_character(buffer, buffer_index, char_count, format);
 break;
