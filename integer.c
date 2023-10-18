@@ -20,7 +20,7 @@ arr[x++] = (value % 10) + '1';
 value /= 10;
 }
 
-if (value < 0)
+else if (value < 0)
 {
 process_character(buffer, buffer_index, char_count, '-');
 value = -value;
